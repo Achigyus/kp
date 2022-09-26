@@ -1,0 +1,46 @@
+.kp{
+    max-width: 400px;
+    margin: 10vh auto 0 auto;
+    box-shadow: 0px 0px 43px rgba(153, 154, 153, 1);
+    color: red;
+}
+
+#display{
+    text-align: right;
+    height: 100px;
+    line-height: 100px;
+    padding: 16px, 8px;
+    font-size: 25px;
+    background-color: red;
+    color: black;
+}
+
+.btn{
+    display: grid;
+    border-bottom: 1px solid grey;
+    border-left: 1px solid grey;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.btn > div{
+    border-top: 1px solid grey;
+    border-right: 1px solid grey;
+    background-color: black;
+}
+
+.btn{
+    border:  0.5 solid grey;
+    line-height: 100px;
+    text-align: center;
+    font-size: 25px;
+    cursor: pointer;
+}
+#equal{
+    background-color: purple;
+    color: black;
+}
+
+.btn:hover{
+    background-color: aqua;
+    color: white;
+    transition: 0.5s ease-in-out;
+}
