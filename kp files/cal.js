@@ -1,27 +1,29 @@
-let display = document. getElementById('display')
+let display = document.getElementById('display')
 
-let btn = Array.from(document.getElementsByClassName('btn'))
-
-btn.map (btn => {
-    btn . addEventListener('click',(e) =>{
-     switch(e.target.innerText){
-        case 'C':
-        display.innerText  = '';
-        break
-        case '←':
-           if(display.innerText){
-            display.innerText = display.innerText. slice (0, -1)
-           }
-            break
+let btns = Array.from(document.getElementsByClassName('btn'))
+console.log(btns)
+btns.map(btn => {
+    btn.addEventListener('click',(e) =>{
+        // console.log('clicked')
+        
+        switch(e.target.innerText){
+            case 'C':
+                display.innerText  = '';
+                break;
+            case '←':
+                if(display.innerText){
+                    display.innerText = display.innerText.slice(0, -1);
+                }
+                break;
             case '=':
                 try{
-                    display.innerText = eval (display.innerText);
+                    display.innerText = eval(display.innerText);
                 }catch{
-                    display.innerText += 'Error'
+                    display.innerText = 'Error!';
                 } 
-                break
-       default:
-        display.innerText = e.target.innerText;
-     }
+                break;
+            default:
+                display.innerText += e.target.innerText;
+        }
     })
 })
