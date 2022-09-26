@@ -21,10 +21,17 @@
     border-left: 1px solid grey;
     grid-template-columns: 1fr 1fr 1fr 1fr;
 }
-.btn > div{
+.btns > div{
     border-top: 1px solid grey;
     border-right: 1px solid grey;
     background-color: black;
+}
+
+.btns{
+    display: grid;
+    border-bottom: 1px solid grey;
+    border-left: 1px solid grey;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
 .btn{
